@@ -8,7 +8,7 @@
   <modules>
     <module>maven</module>
     <module>maven2</module>
-	 <module>MathUtil</module>
+	 <module>as</module>
    
   </modules>
 </project>
