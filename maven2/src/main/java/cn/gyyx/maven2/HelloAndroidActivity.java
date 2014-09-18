@@ -1,9 +1,11 @@
 package cn.gyyx.maven2;
 
+import cn.gyyx.util.MathUtil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class HelloAndroidActivity extends Activity {
 
@@ -17,6 +19,10 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView tv = (TextView) findViewById(R.id.tv_welcome);
+        MathUtil mathUtil = new MathUtil();
+        int sum = mathUtil.getSum(3, 6);
+        tv.setText(sum);
     }
 
     @Override
