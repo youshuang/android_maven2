@@ -6,10 +6,11 @@
   <packaging>pom</packaging>
 
   <modules>
+   <module>logic</module>
     <module>maven</module>
     <module>maven2</module>
 	 <module>as</module>
-	 	 <module>logic</module>
+	 	
 
    
   </modules>
