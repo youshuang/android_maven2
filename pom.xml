@@ -9,6 +9,8 @@
     <module>maven</module>
     <module>maven2</module>
 	 <module>as</module>
+	 	 <module>logic</module>
+
    
   </modules>
 </project>
