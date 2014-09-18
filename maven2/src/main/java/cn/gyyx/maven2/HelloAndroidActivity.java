@@ -1,6 +1,7 @@
 package cn.gyyx.maven2;
 
 import cn.gyyx.common.MathUtil;
+import cn.gyyx.logic.logic.LogicUtil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -23,9 +24,12 @@ public class HelloAndroidActivity extends Activity {
         System.out.println("----------------"+tv);
       
     MathUtil mathUtil = new MathUtil() ;
+    LogicUtil logicUtil = new LogicUtil();
+    
     int sum = mathUtil.getSum(2, 5);
+    int acc = logicUtil.getAcc(3, 3);
     Toast.makeText(this, sum+"", 0).show();
-    tv.setText(sum+"");
+    tv.setText(sum+":"+acc);
     }
 
     @Override
